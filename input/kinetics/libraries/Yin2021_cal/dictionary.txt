@@ -112,4 +112,3 @@ CO(OH)2
 H
 multiplicity 2
 1 H u1 p0 c0
-

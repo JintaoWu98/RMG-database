@@ -1138,3 +1138,114 @@ H      -6.08134000   -0.96262100   -1.09028200
 No rotors considered for this TS.
 """,
 )
+
+entry(
+    index=44,
+    label="HOCHO + HO2 <=> OCHO + H2O2",
+    degeneracy=1,
+    kinetics=Arrhenius(A=(3.7E+01, 'cm^3/(mol*s)'), n=2.98, Ea=(25348, 'cal/mol'), T0=(1, 'K')),
+),
+
+entry(
+    index=45,
+    label="HOCO + O2 <=> HOC(O)OO",
+    degeneracy=1,
+    kinetics=PDepArrhenius(
+        pressures=([0.01, 0.1, 1, 10, 100], 'atm'),
+        arrhenius=[
+            Arrhenius(A=(4.49E-09, 'cm^3/(mol*s)'), n=0.00, Ea=(-17910.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(3.68E-06, 'cm^3/(mol*s)'), n=0.00, Ea=(-10760.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(2.51E-11, 'cm^3/(mol*s)'), n=0.00, Ea=(-24300.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(4.70E-12, 'cm^3/(mol*s)'), n=5.21, Ea=(4355.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(8.71E+00, 'cm^3/(mol*s)'), n=2.17, Ea=(-2871.0, 'cal/mol'), T0=(1, 'K')),
+        ],
+    ),
+    shortDesc=u"""Yin Fig2""",
+    longDesc=
+    u"""
+   CCSD(T)-F12/CBS//M06-2X/6311++G(d,p)
+    """,
+),
+
+entry(
+    index=46,
+    label="HOC(O)OO <=> CO2 + HO2",
+    degeneracy=1,
+    kinetics=PDepArrhenius(
+        pressures=([0.01, 0.1, 1, 10, 100], 'atm'),
+        arrhenius=[
+            Arrhenius(A=(8.16E+07, 's^-1'), n=0.00, Ea=(2680.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(3.42E+08, 's^-1'), n=0.11, Ea=(3091.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(6.35E+10, 's^-1'), n=-0.31, Ea=(4084.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.04E+12, 's^-1'), n=-0.40, Ea=(4916.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(3.22E+12, 's^-1'), n=-0.33, Ea=(5655.0, 'cal/mol'), T0=(1, 'K')),
+        ],
+    ),
+    shortDesc=u"""Yin Fig2""",
+    longDesc=
+    u"""
+   CCSD(T)-F12/CBS//M06-2X/6311++G(d,p)
+    """,
+),
+
+entry(
+    index=47,
+    label="HOCO + O2 <=> CO2 + HO2",
+    degeneracy=1,
+    kinetics=Arrhenius(A=(1.79E+16, 'cm^3/(mol*s)'), n=-1.23, Ea=(909.6, 'cal/mol'), T0=(1, 'K')),
+),
+
+entry(
+    index=48,
+    label="HOCO + HO2 <=> HOCOO + OH",
+    degeneracy=1,
+    kinetics=Arrhenius(A=(7.28E+12, 'cm^3/(mol*s)'), n=0.02, Ea=(118.6, 'cal/mol'), T0=(1, 'K')),
+),
+
+entry(
+    index=49,
+    label="HOCO + HO2 <=> H2O + CO3",
+    degeneracy=1,
+    kinetics=Arrhenius(A=(9.23E+08, 'cm^3/(mol*s)'), n=0.68, Ea=(-549.0, 'cal/mol'), T0=(1, 'K')),
+),
+
+entry(
+    index=50,
+    label="HOCO + HO2 <=> H2O2 + CO2",
+    degeneracy=1,
+    kinetics=Arrhenius(A=(3.31E+11, 'cm^3/(mol*s)'), n=0.16, Ea=(-196.5, 'cal/mol'), T0=(1, 'K')),
+),
+
+entry(
+    index=51,
+    label="HOCO + HO2 <=> HOC(O)OOH",
+    degeneracy=1,
+    kinetics=PDepArrhenius(
+        pressures=([0.01, 0.1, 1, 10, 100], 'atm'),
+        arrhenius=[
+            Arrhenius(A=(2.63E+96, 'cm^3/(mol*s)'), n=-27.42, Ea=(55100.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(3.81E+15, 'cm^3/(mol*s)'), n=-3.25, Ea=(15410.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(3.31E+18, 'cm^3/(mol*s)'), n=-3.72, Ea=(6721.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.59E+28, 'cm^3/(mol*s)'), n=-5.94, Ea=(4270.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.11E+32, 'cm^3/(mol*s)'), n=-6.34, Ea=(5754.0, 'cal/mol'), T0=(1, 'K')),
+        ],
+    ),
+    shortDesc=u"""Yin Fig3""",
+),
+
+entry(
+    index=52,
+    label="HOC(O)OOH <=> HOCOO + OH",
+    degeneracy=1,
+    kinetics=PDepArrhenius(
+        pressures=([0.01, 0.1, 1, 10, 100], 'atm'),
+        arrhenius=[
+            Arrhenius(A=(1.23E+46, 's^-1'), n=-10.57, Ea=(60710.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(2.29E+48, 's^-1'), n=-10.80, Ea=(62760.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.84E+46, 's^-1'), n=-9.84, Ea=(63380.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.69E+40, 's^-1'), n=-7.79, Ea=(62080.0, 'cal/mol'), T0=(1, 'K')),
+            Arrhenius(A=(1.29E+32, 's^-1'), n=-5.22, Ea=(59410.0, 'cal/mol'), T0=(1, 'K')),
+        ],
+    ),
+    shortDesc=u"""Yin Fig3""",
+),

@@ -55,6 +55,11 @@ entry(
             Arrhenius(A=(8.71E+00, 'cm^3/(mol*s)'), n=2.17, Ea=(-2871.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig2""",
+    longDesc=
+    u"""
+   CCSD(T)-F12/CBS//M06-2X/6311++G(d,p)
+    """,
 ),
 
 entry(
@@ -71,6 +76,11 @@ entry(
             Arrhenius(A=(3.22E+12, 's^-1'), n=-0.33, Ea=(5655.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig2""",
+    longDesc=
+    u"""
+   CCSD(T)-F12/CBS//M06-2X/6311++G(d,p)
+    """,
 ),
 
 entry(
@@ -115,6 +125,7 @@ entry(
             Arrhenius(A=(1.11E+32, 'cm^3/(mol*s)'), n=-6.34, Ea=(5754.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig3""",
 ),
 
 entry(
@@ -131,6 +142,7 @@ entry(
             Arrhenius(A=(1.29E+32, 's^-1'), n=-5.22, Ea=(59410.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig2""",
 ),
 
 entry(
@@ -147,6 +159,7 @@ entry(
             Arrhenius(A=(1.78E+17, 'cm^3/(mol*s)'), n=-2.50, Ea=(1980.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig5""",
 ),
 
 # entry(
@@ -170,4 +183,5 @@ entry(
             Arrhenius(A=(3.77E+15, 's^-1'), n=-1.22, Ea=(7245.0, 'cal/mol'), T0=(1, 'K')),
         ],
     ),
+    shortDesc=u"""Yin Fig5""",
 )
