@@ -289,7 +289,7 @@ entry(
     label="HOCHO <=> H2 + CO2",
     kinetics=Lindemann(
         arrheniusHigh=Arrhenius(A=(1.8036e+16,'1/s'), n=-1, Ea=(57.12,'kcal/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K')), # "Fitted at 1e6 bar"
-        arrheniusLow=Arrhenius(A=(1.89521e-12,'cm^3/(mol*s)'), n=7.24515, Ea=(22.446,'kcal/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'))  # "Fitted at 1e-4 bar"
+        arrheniusLow=Arrhenius(A=(2.86299e-10,'cm^3/(mol*s)'), n=7.32655, Ea=(30.9089,'kcal/mol'), T0=(1,'K'), Tmin=(300,'K'), Tmax=(3000,'K'))  # "Fitted at 1e-4 bar"
         ),
     elementary_high_p = True,
     # kinetics = Chebyshev(
@@ -780,7 +780,7 @@ entry(
             [-3.340e-02, -2.708e-02,  2.709e-02, -1.041e-02],
             [-2.395e-02,  3.246e-02, -1.629e-03, -6.735e-03],
         ],
-        kunits = 'cm^3/(mol*s)',
+        kunits = '1/s',
         Tmin = (300, 'K'),
         Tmax = (3000, 'K'),
         Pmin = (0.01, 'bar'),
@@ -936,7 +936,7 @@ entry(
             [-4.527e-02, -2.106e-02, -1.029e-02, -2.305e-03],
             [-3.803e-02,  6.337e-03, -6.571e-04, -2.129e-03],
         ],
-        kunits = 'cm^3/(mol*s)',
+        kunits = '1/s',
         Tmin = (300, 'K'),
         Tmax = (3000, 'K'),
         Pmin = (0.01, 'bar'),
